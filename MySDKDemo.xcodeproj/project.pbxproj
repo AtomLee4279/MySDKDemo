@@ -22,6 +22,10 @@
 		675D02A620E1F919004E0687 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675D02A520E1F919004E0687 /* LoginView.xib */; };
 		675D02A920E1F957004E0687 /* LoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = 675D02A720E1F957004E0687 /* LoginView.h */; };
 		675D02AA20E1F957004E0687 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D02A820E1F957004E0687 /* LoginView.m */; };
+		675D02B020E237A0004E0687 /* LogoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675D02AF20E237A0004E0687 /* LogoView.xib */; };
+		675D02BC20E23B3D004E0687 /* LogoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 675D02BA20E23B3D004E0687 /* LogoView.h */; };
+		675D02BD20E23B3D004E0687 /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D02BB20E23B3D004E0687 /* LogoView.m */; };
+		675D02C320E242BC004E0687 /* MySDKDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 675D02C220E242BC004E0687 /* MySDKDemo.bundle */; };
 		D01FE31A376A83339810C40E /* libPods-MySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +75,10 @@
 		675D02A520E1F919004E0687 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		675D02A720E1F957004E0687 /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		675D02A820E1F957004E0687 /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		675D02AF20E237A0004E0687 /* LogoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoView.xib; sourceTree = "<group>"; };
+		675D02BA20E23B3D004E0687 /* LogoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogoView.h; sourceTree = "<group>"; };
+		675D02BB20E23B3D004E0687 /* LogoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogoView.m; sourceTree = "<group>"; };
+		675D02C220E242BC004E0687 /* MySDKDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MySDKDemo.bundle; sourceTree = "<group>"; };
 		9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22468AD4E648C2FB747C47 /* Pods-MySDKDemoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoKit/Pods-MySDKDemoKit.debug.xcconfig"; sourceTree = "<group>"; };
 		ECD160EB9BF04CF311AE38DC /* libPods-MySDKDemoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,8 +156,10 @@
 		675D029E20E1F22A004E0687 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				675D02AB20E23738004E0687 /* Common */,
 				675D029F20E1F246004E0687 /* Init */,
 				675D02A120E1F26F004E0687 /* Login */,
+				675D02C220E242BC004E0687 /* MySDKDemo.bundle */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -195,6 +205,40 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		675D02AB20E23738004E0687 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				675D02B120E237C7004E0687 /* Logo */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		675D02AD20E23759004E0687 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				675D02AF20E237A0004E0687 /* LogoView.xib */,
+				675D02BA20E23B3D004E0687 /* LogoView.h */,
+				675D02BB20E23B3D004E0687 /* LogoView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		675D02AE20E2375C004E0687 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		675D02B120E237C7004E0687 /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				675D02AE20E2375C004E0687 /* Model */,
+				675D02AD20E23759004E0687 /* View */,
+			);
+			path = Logo;
+			sourceTree = "<group>";
+		};
 		7BD2BB60E6B0C4D5661BE067 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +266,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675D02BC20E23B3D004E0687 /* LogoView.h in Headers */,
 				675D02A920E1F957004E0687 /* LoginView.h in Headers */,
 				675D028F20E1DA84004E0687 /* MySDKDemoKit.h in Headers */,
 				675D029C20E1ED5D004E0687 /* MySDK.h in Headers */,
@@ -322,6 +367,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				675D02A620E1F919004E0687 /* LoginView.xib in Resources */,
+				675D02C320E242BC004E0687 /* MySDKDemo.bundle in Resources */,
+				675D02B020E237A0004E0687 /* LogoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675D02BD20E23B3D004E0687 /* LogoView.m in Sources */,
 				675D02AA20E1F957004E0687 /* LoginView.m in Sources */,
 				675D029D20E1ED5D004E0687 /* MySDK.m in Sources */,
 			);
