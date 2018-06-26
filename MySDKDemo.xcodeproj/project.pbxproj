@@ -13,7 +13,34 @@
 		675D027A20E1D9F2004E0687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675D027920E1D9F2004E0687 /* Assets.xcassets */; };
 		675D027D20E1D9F2004E0687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675D027B20E1D9F2004E0687 /* LaunchScreen.storyboard */; };
 		675D028020E1D9F2004E0687 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D027F20E1D9F2004E0687 /* main.m */; };
+		675D028F20E1DA84004E0687 /* MySDKDemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 675D028D20E1DA83004E0687 /* MySDKDemoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		675D029220E1DA84004E0687 /* MySDKDemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675D028B20E1DA83004E0687 /* MySDKDemoKit.framework */; };
+		675D029320E1DA84004E0687 /* MySDKDemoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675D028B20E1DA83004E0687 /* MySDKDemoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		675D029020E1DA84004E0687 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 675D026520E1D9F0004E0687 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 675D028A20E1DA83004E0687;
+			remoteInfo = MySDKDemoKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		675D029720E1DA84004E0687 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				675D029320E1DA84004E0687 /* MySDKDemoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		675D026D20E1D9F0004E0687 /* MySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +53,21 @@
 		675D027C20E1D9F2004E0687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		675D027E20E1D9F2004E0687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		675D027F20E1D9F2004E0687 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		675D028B20E1DA83004E0687 /* MySDKDemoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MySDKDemoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		675D028D20E1DA83004E0687 /* MySDKDemoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKDemoKit.h; sourceTree = "<group>"; };
+		675D028E20E1DA84004E0687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		675D026A20E1D9F0004E0687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				675D029220E1DA84004E0687 /* MySDKDemoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		675D028720E1DA83004E0687 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				675D026F20E1D9F0004E0687 /* MySDKDemo */,
+				675D028C20E1DA83004E0687 /* MySDKDemoKit */,
 				675D026E20E1D9F0004E0687 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				675D026D20E1D9F0004E0687 /* MySDKDemo.app */,
+				675D028B20E1DA83004E0687 /* MySDKDemoKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,7 +111,27 @@
 			path = MySDKDemo;
 			sourceTree = "<group>";
 		};
+		675D028C20E1DA83004E0687 /* MySDKDemoKit */ = {
+			isa = PBXGroup;
+			children = (
+				675D028D20E1DA83004E0687 /* MySDKDemoKit.h */,
+				675D028E20E1DA84004E0687 /* Info.plist */,
+			);
+			path = MySDKDemoKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		675D028820E1DA83004E0687 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				675D028F20E1DA84004E0687 /* MySDKDemoKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		675D026C20E1D9F0004E0687 /* MySDKDemo */ = {
@@ -81,15 +141,35 @@
 				675D026920E1D9F0004E0687 /* Sources */,
 				675D026A20E1D9F0004E0687 /* Frameworks */,
 				675D026B20E1D9F0004E0687 /* Resources */,
+				675D029720E1DA84004E0687 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				675D029120E1DA84004E0687 /* PBXTargetDependency */,
 			);
 			name = MySDKDemo;
 			productName = MySDKDemo;
 			productReference = 675D026D20E1D9F0004E0687 /* MySDKDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		675D028A20E1DA83004E0687 /* MySDKDemoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 675D029420E1DA84004E0687 /* Build configuration list for PBXNativeTarget "MySDKDemoKit" */;
+			buildPhases = (
+				675D028620E1DA83004E0687 /* Sources */,
+				675D028720E1DA83004E0687 /* Frameworks */,
+				675D028820E1DA83004E0687 /* Headers */,
+				675D028920E1DA83004E0687 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySDKDemoKit;
+			productName = MySDKDemoKit;
+			productReference = 675D028B20E1DA83004E0687 /* MySDKDemoKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +181,9 @@
 				ORGANIZATIONNAME = "李一贤";
 				TargetAttributes = {
 					675D026C20E1D9F0004E0687 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					675D028A20E1DA83004E0687 = {
 						CreatedOnToolsVersion = 9.4;
 					};
 				};
@@ -119,6 +202,7 @@
 			projectRoot = "";
 			targets = (
 				675D026C20E1D9F0004E0687 /* MySDKDemo */,
+				675D028A20E1DA83004E0687 /* MySDKDemoKit */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +215,13 @@
 				675D027D20E1D9F2004E0687 /* LaunchScreen.storyboard in Resources */,
 				675D027A20E1D9F2004E0687 /* Assets.xcassets in Resources */,
 				675D027820E1D9F0004E0687 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		675D028920E1DA83004E0687 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +238,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		675D028620E1DA83004E0687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		675D029120E1DA84004E0687 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 675D028A20E1DA83004E0687 /* MySDKDemoKit */;
+			targetProxy = 675D029020E1DA84004E0687 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		675D027620E1D9F0004E0687 /* Main.storyboard */ = {
@@ -283,14 +389,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = CH78CKY35H;
 				INFOPLIST_FILE = MySDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.myTest.MySDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaolasdk.test20180321;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd774aed-5bbc-46d7-9e7c-87ee86affc4d";
+				PROVISIONING_PROFILE_SPECIFIER = sdktest_20180321_dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -299,15 +408,72 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = CH78CKY35H;
 				INFOPLIST_FILE = MySDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.myTest.MySDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaolasdk.test20180321;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd774aed-5bbc-46d7-9e7c-87ee86affc4d";
+				PROVISIONING_PROFILE_SPECIFIER = sdktest_20180321_dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		675D029520E1DA84004E0687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CH78CKY35H;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MySDKDemoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myTest.MySDKDemoKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		675D029620E1DA84004E0687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = CH78CKY35H;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MySDKDemoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myTest.MySDKDemoKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -328,6 +494,15 @@
 			buildConfigurations = (
 				675D028420E1D9F2004E0687 /* Debug */,
 				675D028520E1D9F2004E0687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		675D029420E1DA84004E0687 /* Build configuration list for PBXNativeTarget "MySDKDemoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				675D029520E1DA84004E0687 /* Debug */,
+				675D029620E1DA84004E0687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
