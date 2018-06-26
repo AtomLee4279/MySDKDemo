@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		164B011D10E6AA4D99051164 /* libPods-MySDKDemoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD160EB9BF04CF311AE38DC /* libPods-MySDKDemoKit.a */; };
 		675D027220E1D9F0004E0687 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D027120E1D9F0004E0687 /* AppDelegate.m */; };
 		675D027520E1D9F0004E0687 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D027420E1D9F0004E0687 /* ViewController.m */; };
 		675D027820E1D9F0004E0687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675D027620E1D9F0004E0687 /* Main.storyboard */; };
@@ -16,6 +17,12 @@
 		675D028F20E1DA84004E0687 /* MySDKDemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 675D028D20E1DA83004E0687 /* MySDKDemoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		675D029220E1DA84004E0687 /* MySDKDemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675D028B20E1DA83004E0687 /* MySDKDemoKit.framework */; };
 		675D029320E1DA84004E0687 /* MySDKDemoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675D028B20E1DA83004E0687 /* MySDKDemoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		675D029C20E1ED5D004E0687 /* MySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 675D029A20E1ED5D004E0687 /* MySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		675D029D20E1ED5D004E0687 /* MySDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D029B20E1ED5D004E0687 /* MySDK.m */; };
+		675D02A620E1F919004E0687 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675D02A520E1F919004E0687 /* LoginView.xib */; };
+		675D02A920E1F957004E0687 /* LoginView.h in Headers */ = {isa = PBXBuildFile; fileRef = 675D02A720E1F957004E0687 /* LoginView.h */; };
+		675D02AA20E1F957004E0687 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D02A820E1F957004E0687 /* LoginView.m */; };
+		D01FE31A376A83339810C40E /* libPods-MySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0209C0D1716563EE50C31427 /* Pods-MySDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemo/Pods-MySDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1CB74C22691A7C8CDB33C95D /* Pods-MySDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemo/Pods-MySDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4E2911D1EF250000D9183269 /* Pods-MySDKDemoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoKit/Pods-MySDKDemoKit.release.xcconfig"; sourceTree = "<group>"; };
 		675D026D20E1D9F0004E0687 /* MySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		675D027020E1D9F0004E0687 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		675D027120E1D9F0004E0687 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +66,14 @@
 		675D028B20E1DA83004E0687 /* MySDKDemoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MySDKDemoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		675D028D20E1DA83004E0687 /* MySDKDemoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKDemoKit.h; sourceTree = "<group>"; };
 		675D028E20E1DA84004E0687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		675D029A20E1ED5D004E0687 /* MySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDK.h; sourceTree = "<group>"; };
+		675D029B20E1ED5D004E0687 /* MySDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDK.m; sourceTree = "<group>"; };
+		675D02A520E1F919004E0687 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		675D02A720E1F957004E0687 /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		675D02A820E1F957004E0687 /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC22468AD4E648C2FB747C47 /* Pods-MySDKDemoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoKit/Pods-MySDKDemoKit.debug.xcconfig"; sourceTree = "<group>"; };
+		ECD160EB9BF04CF311AE38DC /* libPods-MySDKDemoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				675D029220E1DA84004E0687 /* MySDKDemoKit.framework in Frameworks */,
+				D01FE31A376A83339810C40E /* libPods-MySDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164B011D10E6AA4D99051164 /* libPods-MySDKDemoKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +103,8 @@
 				675D026F20E1D9F0004E0687 /* MySDKDemo */,
 				675D028C20E1DA83004E0687 /* MySDKDemoKit */,
 				675D026E20E1D9F0004E0687 /* Products */,
+				AF3D7FF7CB9E7D91F9267328 /* Pods */,
+				7BD2BB60E6B0C4D5661BE067 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,10 +136,83 @@
 		675D028C20E1DA83004E0687 /* MySDKDemoKit */ = {
 			isa = PBXGroup;
 			children = (
+				675D029E20E1F22A004E0687 /* Categories */,
 				675D028D20E1DA83004E0687 /* MySDKDemoKit.h */,
+				675D029A20E1ED5D004E0687 /* MySDK.h */,
+				675D029B20E1ED5D004E0687 /* MySDK.m */,
 				675D028E20E1DA84004E0687 /* Info.plist */,
 			);
 			path = MySDKDemoKit;
+			sourceTree = "<group>";
+		};
+		675D029E20E1F22A004E0687 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				675D029F20E1F246004E0687 /* Init */,
+				675D02A120E1F26F004E0687 /* Login */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		675D029F20E1F246004E0687 /* Init */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Init;
+			sourceTree = "<group>";
+		};
+		675D02A120E1F26F004E0687 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				675D02A420E1F29B004E0687 /* Model */,
+				675D02A320E1F298004E0687 /* View */,
+				675D02A220E1F292004E0687 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		675D02A220E1F292004E0687 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		675D02A320E1F298004E0687 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				675D02A520E1F919004E0687 /* LoginView.xib */,
+				675D02A720E1F957004E0687 /* LoginView.h */,
+				675D02A820E1F957004E0687 /* LoginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		675D02A420E1F29B004E0687 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BD2BB60E6B0C4D5661BE067 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */,
+				ECD160EB9BF04CF311AE38DC /* libPods-MySDKDemoKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF3D7FF7CB9E7D91F9267328 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0209C0D1716563EE50C31427 /* Pods-MySDKDemo.debug.xcconfig */,
+				1CB74C22691A7C8CDB33C95D /* Pods-MySDKDemo.release.xcconfig */,
+				EC22468AD4E648C2FB747C47 /* Pods-MySDKDemoKit.debug.xcconfig */,
+				4E2911D1EF250000D9183269 /* Pods-MySDKDemoKit.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +222,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675D02A920E1F957004E0687 /* LoginView.h in Headers */,
 				675D028F20E1DA84004E0687 /* MySDKDemoKit.h in Headers */,
+				675D029C20E1ED5D004E0687 /* MySDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 675D028320E1D9F2004E0687 /* Build configuration list for PBXNativeTarget "MySDKDemo" */;
 			buildPhases = (
+				0B47C827115D8C8834CDAE07 /* [CP] Check Pods Manifest.lock */,
 				675D026920E1D9F0004E0687 /* Sources */,
 				675D026A20E1D9F0004E0687 /* Frameworks */,
 				675D026B20E1D9F0004E0687 /* Resources */,
@@ -157,6 +255,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 675D029420E1DA84004E0687 /* Build configuration list for PBXNativeTarget "MySDKDemoKit" */;
 			buildPhases = (
+				AAFD7EAD497D366F375BAB8A /* [CP] Check Pods Manifest.lock */,
 				675D028620E1DA83004E0687 /* Sources */,
 				675D028720E1DA83004E0687 /* Frameworks */,
 				675D028820E1DA83004E0687 /* Headers */,
@@ -222,10 +321,50 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675D02A620E1F919004E0687 /* LoginView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B47C827115D8C8834CDAE07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAFD7EAD497D366F375BAB8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySDKDemoKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		675D026920E1D9F0004E0687 /* Sources */ = {
@@ -242,6 +381,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675D02AA20E1F957004E0687 /* LoginView.m in Sources */,
+				675D029D20E1ED5D004E0687 /* MySDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +528,7 @@
 		};
 		675D028420E1D9F2004E0687 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0209C0D1716563EE50C31427 /* Pods-MySDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -406,6 +548,7 @@
 		};
 		675D028520E1D9F2004E0687 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB74C22691A7C8CDB33C95D /* Pods-MySDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -425,6 +568,7 @@
 		};
 		675D029520E1DA84004E0687 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC22468AD4E648C2FB747C47 /* Pods-MySDKDemoKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +596,7 @@
 		};
 		675D029620E1DA84004E0687 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E2911D1EF250000D9183269 /* Pods-MySDKDemoKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
