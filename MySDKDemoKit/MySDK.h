@@ -11,6 +11,7 @@
 
 @protocol KolaDelegate <NSObject>
 
+@optional
 //1.初始化回调方法
 -(void)KolaDidFinishInit:(NSDictionary*)initRuslt;
 
@@ -28,6 +29,7 @@
 //单例
 + (instancetype)shareInstance;
 
+-(void)delegateToCPWithType:(NSString *)type andParam:(NSDictionary *)param;
 /**
  初始化
  */

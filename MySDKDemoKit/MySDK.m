@@ -8,7 +8,6 @@
 
 #import "MySDK.h"
 #import "MySDKNetWorking.h"
-#import "KolaDelegateTest.h"
 @class MySDK;
 @implementation MySDK
 
@@ -25,16 +24,18 @@
 
 + (void)Kola_InitWithParam:(NSDictionary*)param
 {
-    [MySDKNetWorking myRequestWithType:@"init" andParam:nil];
+    [MySDKNetWorking myRequestWithType:@"init" param:param];
     
 }
 
 -(void)delegateToCPWithType:(NSString *)type andParam:(NSDictionary *)param
 {
-    
-    if ([[MySDK shareInstance].delegate respondsToSelector:@selector(KolaDidFinishInit:)]) {
-        [[MySDK shareInstance].delegate KolaDidFinishInit:param];
+    if ([type isEqualToString:@"init"]) {
+        if ([self.delegate respondsToSelector:@selector(KolaDidFinishInit:)]) {
+            [self.delegate KolaDidFinishInit:param];
+        }
     }
+    
 }
 
 @end

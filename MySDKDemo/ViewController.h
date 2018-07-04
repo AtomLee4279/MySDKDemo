@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MySDK.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<KolaDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *test;
 

@@ -27,8 +27,6 @@
 		675D02BD20E23B3D004E0687 /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D02BB20E23B3D004E0687 /* LogoView.m */; };
 		675D02C320E242BC004E0687 /* MySDKDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 675D02C220E242BC004E0687 /* MySDKDemo.bundle */; };
 		678BC77920EB852600AAF280 /* testBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 678BC77820EB852600AAF280 /* testBundle.bundle */; };
-		67AC71B220EC71C4001A8E2C /* KolaDelegateTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AC71B020EC71C4001A8E2C /* KolaDelegateTest.h */; };
-		67AC71B320EC71C4001A8E2C /* KolaDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC71B120EC71C4001A8E2C /* KolaDelegateTest.m */; };
 		67AC71B620ECA093001A8E2C /* MySDKNetWorking.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AC71B420ECA093001A8E2C /* MySDKNetWorking.h */; };
 		67AC71B720ECA093001A8E2C /* MySDKNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC71B520ECA093001A8E2C /* MySDKNetWorking.m */; };
 		D01FE31A376A83339810C40E /* libPods-MySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */; };
@@ -86,8 +84,6 @@
 		675D02C220E242BC004E0687 /* MySDKDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MySDKDemo.bundle; sourceTree = "<group>"; };
 		678BC77420EB84F700AAF280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		678BC77820EB852600AAF280 /* testBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = testBundle.bundle; sourceTree = "<group>"; };
-		67AC71B020EC71C4001A8E2C /* KolaDelegateTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KolaDelegateTest.h; sourceTree = "<group>"; };
-		67AC71B120EC71C4001A8E2C /* KolaDelegateTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KolaDelegateTest.m; sourceTree = "<group>"; };
 		67AC71B420ECA093001A8E2C /* MySDKNetWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKNetWorking.h; sourceTree = "<group>"; };
 		67AC71B520ECA093001A8E2C /* MySDKNetWorking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKNetWorking.m; sourceTree = "<group>"; };
 		9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,8 +169,6 @@
 				675D02AB20E23738004E0687 /* Common */,
 				675D029F20E1F246004E0687 /* Init */,
 				675D02A120E1F26F004E0687 /* Login */,
-				67AC71B020EC71C4001A8E2C /* KolaDelegateTest.h */,
-				67AC71B120EC71C4001A8E2C /* KolaDelegateTest.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -291,7 +285,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67AC71B220EC71C4001A8E2C /* KolaDelegateTest.h in Headers */,
 				67AC71B620ECA093001A8E2C /* MySDKNetWorking.h in Headers */,
 				675D02BC20E23B3D004E0687 /* LogoView.h in Headers */,
 				675D02A920E1F957004E0687 /* LoginView.h in Headers */,
@@ -460,7 +453,6 @@
 				67AC71B720ECA093001A8E2C /* MySDKNetWorking.m in Sources */,
 				675D02AA20E1F957004E0687 /* LoginView.m in Sources */,
 				675D029D20E1ED5D004E0687 /* MySDK.m in Sources */,
-				67AC71B320EC71C4001A8E2C /* KolaDelegateTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

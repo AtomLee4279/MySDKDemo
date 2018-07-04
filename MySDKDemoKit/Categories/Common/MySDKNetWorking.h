@@ -10,7 +10,7 @@
 
 @interface MySDKNetWorking : NSObject
 
-+(void)myRequestWithType:(NSString*)type andParam:(nullable id)param;
++(void)myRequestWithType:(NSString*)type param:(nullable id)param;
 
 
 @end

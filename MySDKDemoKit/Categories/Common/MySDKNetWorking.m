@@ -45,7 +45,7 @@ static NSString * const myURLInit = @"App/Basic/Init";
                                 success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                                     //请求成功
                                     NSLog(@"--%@请求成功，返回数据--：%@",type,responseObject);
-                               
+                                    [[MySDK shareInstance] delegateToCPWithType:type andParam:responseObject];
                                     
                                     
                                 }failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
