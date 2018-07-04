@@ -26,6 +26,11 @@
 		675D02BC20E23B3D004E0687 /* LogoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 675D02BA20E23B3D004E0687 /* LogoView.h */; };
 		675D02BD20E23B3D004E0687 /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D02BB20E23B3D004E0687 /* LogoView.m */; };
 		675D02C320E242BC004E0687 /* MySDKDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 675D02C220E242BC004E0687 /* MySDKDemo.bundle */; };
+		678BC77920EB852600AAF280 /* testBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 678BC77820EB852600AAF280 /* testBundle.bundle */; };
+		67AC71B220EC71C4001A8E2C /* KolaDelegateTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AC71B020EC71C4001A8E2C /* KolaDelegateTest.h */; };
+		67AC71B320EC71C4001A8E2C /* KolaDelegateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC71B120EC71C4001A8E2C /* KolaDelegateTest.m */; };
+		67AC71B620ECA093001A8E2C /* MySDKNetWorking.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AC71B420ECA093001A8E2C /* MySDKNetWorking.h */; };
+		67AC71B720ECA093001A8E2C /* MySDKNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC71B520ECA093001A8E2C /* MySDKNetWorking.m */; };
 		D01FE31A376A83339810C40E /* libPods-MySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +84,12 @@
 		675D02BA20E23B3D004E0687 /* LogoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogoView.h; sourceTree = "<group>"; };
 		675D02BB20E23B3D004E0687 /* LogoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogoView.m; sourceTree = "<group>"; };
 		675D02C220E242BC004E0687 /* MySDKDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MySDKDemo.bundle; sourceTree = "<group>"; };
+		678BC77420EB84F700AAF280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		678BC77820EB852600AAF280 /* testBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = testBundle.bundle; sourceTree = "<group>"; };
+		67AC71B020EC71C4001A8E2C /* KolaDelegateTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KolaDelegateTest.h; sourceTree = "<group>"; };
+		67AC71B120EC71C4001A8E2C /* KolaDelegateTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KolaDelegateTest.m; sourceTree = "<group>"; };
+		67AC71B420ECA093001A8E2C /* MySDKNetWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKNetWorking.h; sourceTree = "<group>"; };
+		67AC71B520ECA093001A8E2C /* MySDKNetWorking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKNetWorking.m; sourceTree = "<group>"; };
 		9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22468AD4E648C2FB747C47 /* Pods-MySDKDemoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoKit/Pods-MySDKDemoKit.debug.xcconfig"; sourceTree = "<group>"; };
 		ECD160EB9BF04CF311AE38DC /* libPods-MySDKDemoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +121,7 @@
 			children = (
 				675D026F20E1D9F0004E0687 /* MySDKDemo */,
 				675D028C20E1DA83004E0687 /* MySDKDemoKit */,
+				678BC77320EB84F700AAF280 /* test */,
 				675D026E20E1D9F0004E0687 /* Products */,
 				AF3D7FF7CB9E7D91F9267328 /* Pods */,
 				7BD2BB60E6B0C4D5661BE067 /* Frameworks */,
@@ -129,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				675D027020E1D9F0004E0687 /* AppDelegate.h */,
+				678BC77820EB852600AAF280 /* testBundle.bundle */,
 				675D027120E1D9F0004E0687 /* AppDelegate.m */,
 				675D027320E1D9F0004E0687 /* ViewController.h */,
 				675D027420E1D9F0004E0687 /* ViewController.m */,
@@ -149,6 +162,7 @@
 				675D029A20E1ED5D004E0687 /* MySDK.h */,
 				675D029B20E1ED5D004E0687 /* MySDK.m */,
 				675D028E20E1DA84004E0687 /* Info.plist */,
+				675D02C220E242BC004E0687 /* MySDKDemo.bundle */,
 			);
 			path = MySDKDemoKit;
 			sourceTree = "<group>";
@@ -159,7 +173,8 @@
 				675D02AB20E23738004E0687 /* Common */,
 				675D029F20E1F246004E0687 /* Init */,
 				675D02A120E1F26F004E0687 /* Login */,
-				675D02C220E242BC004E0687 /* MySDKDemo.bundle */,
+				67AC71B020EC71C4001A8E2C /* KolaDelegateTest.h */,
+				67AC71B120EC71C4001A8E2C /* KolaDelegateTest.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -209,6 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				675D02B120E237C7004E0687 /* Logo */,
+				67AC71B420ECA093001A8E2C /* MySDKNetWorking.h */,
+				67AC71B520ECA093001A8E2C /* MySDKNetWorking.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -239,6 +256,14 @@
 			path = Logo;
 			sourceTree = "<group>";
 		};
+		678BC77320EB84F700AAF280 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				678BC77420EB84F700AAF280 /* Info.plist */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		7BD2BB60E6B0C4D5661BE067 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +291,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67AC71B220EC71C4001A8E2C /* KolaDelegateTest.h in Headers */,
+				67AC71B620ECA093001A8E2C /* MySDKNetWorking.h in Headers */,
 				675D02BC20E23B3D004E0687 /* LogoView.h in Headers */,
 				675D02A920E1F957004E0687 /* LoginView.h in Headers */,
 				675D028F20E1DA84004E0687 /* MySDKDemoKit.h in Headers */,
@@ -356,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678BC77920EB852600AAF280 /* testBundle.bundle in Resources */,
 				675D027D20E1D9F2004E0687 /* LaunchScreen.storyboard in Resources */,
 				675D027A20E1D9F2004E0687 /* Assets.xcassets in Resources */,
 				675D027820E1D9F0004E0687 /* Main.storyboard in Resources */,
@@ -429,8 +457,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				675D02BD20E23B3D004E0687 /* LogoView.m in Sources */,
+				67AC71B720ECA093001A8E2C /* MySDKNetWorking.m in Sources */,
 				675D02AA20E1F957004E0687 /* LoginView.m in Sources */,
 				675D029D20E1ED5D004E0687 /* MySDK.m in Sources */,
+				67AC71B320EC71C4001A8E2C /* KolaDelegateTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
