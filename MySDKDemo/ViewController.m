@@ -34,11 +34,11 @@
     [MySDKConfig shareInstance].appid =  @"100000";
     [MySDKConfig shareInstance].appkey =  @"123456";
     [MySDKConfig shareInstance].channel = @"appstore100000";
-    [MySDK Kola_InitWithParam:[NSDictionary dictionary]];
+    [MySDK Kola_Init];
     
 }
 
--(void)KolaDidFinishInitWithResult:(NSDictionary *)initRuslt
+-(void)KolaDidFinishInit:(NSDictionary *)initRuslt
 {
     NSLog(@"aaa");
 }

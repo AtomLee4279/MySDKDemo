@@ -9,9 +9,11 @@
 #import "MySDKNetWorking.h"
 #import <AFNetworking.h>
 #import "MySDK.h"
-
+#import "MySDKConfig.h"
+#import "NSString+Sign.h"
+#import <MJExtension.h>
 #define DBLog(fmt,...) NSLog((@"【方法名】：%s\n""#Koala DEBUG# " fmt), __func__, ##__VA_ARGS__)
-#define NetLog(fmt,...) NSLog((@"【方法名】：%s\n""#Koala NET# " fmt),  __func__, ##__VA_ARGS__)
+#define NetLog(fmt,...) NSLog((@"【方法名】：%s\n""#Koala NET#" fmt),  __func__, ##__VA_ARGS__)
 
 static NSString * const myBaseURLString = @"https://api.sdk.gzkaola.com"; // 正式 -- 最新2018.05.30开始使用
 
@@ -40,15 +42,20 @@ static NSString * const myURLInit = @"App/Basic/Init";
     }
     else{
         NSLog(@"--请检查请求接口调用参数type！--");
+        return;
     }
-    DBLog(@"%@，上传的参数：%@", type,param);
+    //模型转字典
+    NSDictionary *tmpDic = [param mj_keyValues];
+    //字符串签名，返回字典
+    NSDictionary* uploadData = [NSString signDictionaryWithParameters:tmpDic appKey:[MySDKConfig shareInstance].appkey];
+    DBLog(@"%@，上传的参数：%@", type,uploadData);
     [[MySDKNetWorking new].manager POST:requestUrl
-                             parameters:param
+                             parameters:uploadData
                                progress:NULL
                                 success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                                     //请求成功
 //                                    NSLog(@"--%@请求成功，返回数据--：%@",type,responseObject);
-                                    NetLog(@"\n#%@#网络请求成功,返回数据：%@", type,responseObject);
+                                    NetLog(@"%@#网络请求成功,\n返回数据：%@", type,responseObject);
                                     [[MySDK shareInstance] delegateToCPWithType:type andParam:responseObject];
                                     
                                     

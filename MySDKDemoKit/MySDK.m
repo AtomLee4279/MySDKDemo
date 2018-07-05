@@ -23,17 +23,18 @@
     return instance;
 }
 
-+ (void)Kola_InitWithParam:(NSDictionary*)param
++ (void)Kola_Init
 {
-    [MySDKNetWorking myRequestWithType:@"init" param:param];
+    
+    [MySDKNetWorking myRequestWithType:@"init" param:[MySDKConfig shareInstance]];
     
 }
 
 -(void)delegateToCPWithType:(NSString *)type andParam:(NSDictionary *)param
 {
     if ([type isEqualToString:@"init"]) {
-        if ([self.delegate respondsToSelector:@selector(KolaDidFinishInitWithResult:)]) {
-            [self.delegate KolaDidFinishInitWithResult:param];
+        if ([self.delegate respondsToSelector:@selector(KolaDidFinishInit:)]) {
+            [self.delegate KolaDidFinishInit:param];
         }
     }
     else if ([type isEqualToString:@"NetWorkFail"]){

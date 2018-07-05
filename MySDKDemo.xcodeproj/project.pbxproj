@@ -33,6 +33,8 @@
 		67C765C220EDD43500B89357 /* MySDKConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C765C020EDD43500B89357 /* MySDKConfig.m */; };
 		67C765C520EDFCCD00B89357 /* NSString+UniqueStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C765C320EDFCCD00B89357 /* NSString+UniqueStrings.m */; };
 		67C765C620EDFCCD00B89357 /* NSString+UniqueStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C765C420EDFCCD00B89357 /* NSString+UniqueStrings.h */; };
+		67CF948E20EE3CB800F10570 /* NSString+Sign.h in Headers */ = {isa = PBXBuildFile; fileRef = 67CF948C20EE3CB800F10570 /* NSString+Sign.h */; };
+		67CF948F20EE3CB800F10570 /* NSString+Sign.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CF948D20EE3CB800F10570 /* NSString+Sign.m */; };
 		D01FE31A376A83339810C40E /* libPods-MySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +96,8 @@
 		67C765C020EDD43500B89357 /* MySDKConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKConfig.m; sourceTree = "<group>"; };
 		67C765C320EDFCCD00B89357 /* NSString+UniqueStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UniqueStrings.m"; sourceTree = "<group>"; };
 		67C765C420EDFCCD00B89357 /* NSString+UniqueStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UniqueStrings.h"; sourceTree = "<group>"; };
+		67CF948C20EE3CB800F10570 /* NSString+Sign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sign.h"; sourceTree = "<group>"; };
+		67CF948D20EE3CB800F10570 /* NSString+Sign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sign.m"; sourceTree = "<group>"; };
 		9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22468AD4E648C2FB747C47 /* Pods-MySDKDemoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoKit/Pods-MySDKDemoKit.debug.xcconfig"; sourceTree = "<group>"; };
 		ECD160EB9BF04CF311AE38DC /* libPods-MySDKDemoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +230,8 @@
 		675D02AB20E23738004E0687 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				67CF948C20EE3CB800F10570 /* NSString+Sign.h */,
+				67CF948D20EE3CB800F10570 /* NSString+Sign.m */,
 				67C765C420EDFCCD00B89357 /* NSString+UniqueStrings.h */,
 				67C765C320EDFCCD00B89357 /* NSString+UniqueStrings.m */,
 				675D02B120E237C7004E0687 /* Logo */,
@@ -306,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67AC71B620ECA093001A8E2C /* MySDKNetWorking.h in Headers */,
+				67CF948E20EE3CB800F10570 /* NSString+Sign.h in Headers */,
 				67C765C120EDD43500B89357 /* MySDKConfig.h in Headers */,
 				675D02BC20E23B3D004E0687 /* LogoView.h in Headers */,
 				675D02A920E1F957004E0687 /* LoginView.h in Headers */,
@@ -473,6 +480,7 @@
 			files = (
 				675D02BD20E23B3D004E0687 /* LogoView.m in Sources */,
 				67AC71B720ECA093001A8E2C /* MySDKNetWorking.m in Sources */,
+				67CF948F20EE3CB800F10570 /* NSString+Sign.m in Sources */,
 				675D02AA20E1F957004E0687 /* LoginView.m in Sources */,
 				67C765C520EDFCCD00B89357 /* NSString+UniqueStrings.m in Sources */,
 				67C765C220EDD43500B89357 /* MySDKConfig.m in Sources */,

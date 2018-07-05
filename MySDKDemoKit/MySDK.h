@@ -14,7 +14,7 @@
 
 @required
 //1.初始化回调方法
--(void)KolaDidFinishInitWithResult:(NSDictionary*)initRuslt;
+-(void)KolaDidFinishInit:(NSDictionary*)initRuslt;
 
 //2.登录回调方法
 -(void)KolaDidFinishLogin:(NSDictionary*)LoginResult;
@@ -36,6 +36,6 @@
 /**
  初始化
  */
-+ (void)Kola_InitWithParam:(NSDictionary*)param;
++ (void)Kola_Init;
 
 @end
