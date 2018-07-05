@@ -1,0 +1,56 @@
+//
+//  NSString+UniqueStrings.h
+//  KoalaGameKit
+//
+//  Created by kaola  on 2018/3/6.
+//  Copyright © 2018年 kaola . All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface NSString (UniqueStrings)
+
++ (NSString *)uuid;
+
++ (NSString *)idfa;
+
++ (NSString *)idfv;
+
++ (NSString *)systeminfo;
+
++ (NSString *)currentDeviceModel;
+
++ (NSString *)stringFromBase64String:(NSString *)base64String;
+
+/** 获取标示当前游戏包一个字符串
+ 生成规则：游戏的版本号（去小数点）+ 连接符号（“_”） + 游戏build版本号（去小数点）；
+ */
++ (NSString *)cpUniqueVersionString;
+
+
+/**
+ 是否越狱
+ 
+ @return 越狱为1，否则为0
+ */
++ (NSString *)isJailBreak;
+
+
+/**
+ 时间戳
+
+ @return 时间戳
+ */
++ (NSString *)timestramp;
+
+
+/** W X: */
++ (NSString *)kk_winxinzfString;
+
+
+/** A L: */
++ (NSString *)kk_alipayzfString;
+
++ (NSString *)kk_stringFromBase64String:(NSString *)base64String;
+
+@end

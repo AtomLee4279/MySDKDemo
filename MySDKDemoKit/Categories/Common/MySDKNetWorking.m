@@ -10,6 +10,9 @@
 #import <AFNetworking.h>
 #import "MySDK.h"
 
+#define DBLog(fmt,...) NSLog((@"【方法名】：%s\n""#Koala DEBUG# " fmt), __func__, ##__VA_ARGS__)
+#define NetLog(fmt,...) NSLog((@"【方法名】：%s\n""#Koala NET# " fmt),  __func__, ##__VA_ARGS__)
+
 static NSString * const myBaseURLString = @"https://api.sdk.gzkaola.com"; // 正式 -- 最新2018.05.30开始使用
 
 #pragma mark - URLS
@@ -38,19 +41,27 @@ static NSString * const myURLInit = @"App/Basic/Init";
     else{
         NSLog(@"--请检查请求接口调用参数type！--");
     }
-    
+    DBLog(@"%@，上传的参数：%@", type,param);
     [[MySDKNetWorking new].manager POST:requestUrl
                              parameters:param
                                progress:NULL
                                 success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                                     //请求成功
-                                    NSLog(@"--%@请求成功，返回数据--：%@",type,responseObject);
+//                                    NSLog(@"--%@请求成功，返回数据--：%@",type,responseObject);
+                                    NetLog(@"\n#%@#网络请求成功,返回数据：%@", type,responseObject);
                                     [[MySDK shareInstance] delegateToCPWithType:type andParam:responseObject];
                                     
                                     
                                 }failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-                                    //请求失败
                                     
+                                    NSDictionary *dict = @{
+                                                            @"task":task,
+                                                            @"error":error
+                                                          };
+                                    
+                                    NetLog(@"\n#%@#网络请求失败！请检查网络：%@", type,dict);
+                                    //请求失败
+                                    [[MySDK shareInstance] delegateToCPWithType:@"NetWorkFail" andParam:dict];
                                 }];
 }
 

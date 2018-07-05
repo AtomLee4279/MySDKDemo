@@ -29,6 +29,10 @@
 		678BC77920EB852600AAF280 /* testBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 678BC77820EB852600AAF280 /* testBundle.bundle */; };
 		67AC71B620ECA093001A8E2C /* MySDKNetWorking.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AC71B420ECA093001A8E2C /* MySDKNetWorking.h */; };
 		67AC71B720ECA093001A8E2C /* MySDKNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 67AC71B520ECA093001A8E2C /* MySDKNetWorking.m */; };
+		67C765C120EDD43500B89357 /* MySDKConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C765BF20EDD43500B89357 /* MySDKConfig.h */; };
+		67C765C220EDD43500B89357 /* MySDKConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C765C020EDD43500B89357 /* MySDKConfig.m */; };
+		67C765C520EDFCCD00B89357 /* NSString+UniqueStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C765C320EDFCCD00B89357 /* NSString+UniqueStrings.m */; };
+		67C765C620EDFCCD00B89357 /* NSString+UniqueStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C765C420EDFCCD00B89357 /* NSString+UniqueStrings.h */; };
 		D01FE31A376A83339810C40E /* libPods-MySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +90,10 @@
 		678BC77820EB852600AAF280 /* testBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = testBundle.bundle; sourceTree = "<group>"; };
 		67AC71B420ECA093001A8E2C /* MySDKNetWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKNetWorking.h; sourceTree = "<group>"; };
 		67AC71B520ECA093001A8E2C /* MySDKNetWorking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKNetWorking.m; sourceTree = "<group>"; };
+		67C765BF20EDD43500B89357 /* MySDKConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKConfig.h; sourceTree = "<group>"; };
+		67C765C020EDD43500B89357 /* MySDKConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKConfig.m; sourceTree = "<group>"; };
+		67C765C320EDFCCD00B89357 /* NSString+UniqueStrings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UniqueStrings.m"; sourceTree = "<group>"; };
+		67C765C420EDFCCD00B89357 /* NSString+UniqueStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UniqueStrings.h"; sourceTree = "<group>"; };
 		9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22468AD4E648C2FB747C47 /* Pods-MySDKDemoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoKit/Pods-MySDKDemoKit.debug.xcconfig"; sourceTree = "<group>"; };
 		ECD160EB9BF04CF311AE38DC /* libPods-MySDKDemoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,8 +123,8 @@
 		675D026420E1D9F0004E0687 = {
 			isa = PBXGroup;
 			children = (
-				675D026F20E1D9F0004E0687 /* MySDKDemo */,
 				675D028C20E1DA83004E0687 /* MySDKDemoKit */,
+				675D026F20E1D9F0004E0687 /* MySDKDemo */,
 				678BC77320EB84F700AAF280 /* test */,
 				675D026E20E1D9F0004E0687 /* Products */,
 				AF3D7FF7CB9E7D91F9267328 /* Pods */,
@@ -176,6 +184,7 @@
 		675D029F20E1F246004E0687 /* Init */ = {
 			isa = PBXGroup;
 			children = (
+				67C765BE20EDD41C00B89357 /* Model */,
 			);
 			path = Init;
 			sourceTree = "<group>";
@@ -217,6 +226,8 @@
 		675D02AB20E23738004E0687 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				67C765C420EDFCCD00B89357 /* NSString+UniqueStrings.h */,
+				67C765C320EDFCCD00B89357 /* NSString+UniqueStrings.m */,
 				675D02B120E237C7004E0687 /* Logo */,
 				67AC71B420ECA093001A8E2C /* MySDKNetWorking.h */,
 				67AC71B520ECA093001A8E2C /* MySDKNetWorking.m */,
@@ -258,6 +269,15 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		67C765BE20EDD41C00B89357 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67C765BF20EDD43500B89357 /* MySDKConfig.h */,
+				67C765C020EDD43500B89357 /* MySDKConfig.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7BD2BB60E6B0C4D5661BE067 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,8 +306,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				67AC71B620ECA093001A8E2C /* MySDKNetWorking.h in Headers */,
+				67C765C120EDD43500B89357 /* MySDKConfig.h in Headers */,
 				675D02BC20E23B3D004E0687 /* LogoView.h in Headers */,
 				675D02A920E1F957004E0687 /* LoginView.h in Headers */,
+				67C765C620EDFCCD00B89357 /* NSString+UniqueStrings.h in Headers */,
 				675D028F20E1DA84004E0687 /* MySDKDemoKit.h in Headers */,
 				675D029C20E1ED5D004E0687 /* MySDK.h in Headers */,
 			);
@@ -452,6 +474,8 @@
 				675D02BD20E23B3D004E0687 /* LogoView.m in Sources */,
 				67AC71B720ECA093001A8E2C /* MySDKNetWorking.m in Sources */,
 				675D02AA20E1F957004E0687 /* LoginView.m in Sources */,
+				67C765C520EDFCCD00B89357 /* NSString+UniqueStrings.m in Sources */,
+				67C765C220EDD43500B89357 /* MySDKConfig.m in Sources */,
 				675D029D20E1ED5D004E0687 /* MySDK.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,6 +664,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EC22468AD4E648C2FB747C47 /* Pods-MySDKDemoKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -668,6 +693,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E2911D1EF250000D9183269 /* Pods-MySDKDemoKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

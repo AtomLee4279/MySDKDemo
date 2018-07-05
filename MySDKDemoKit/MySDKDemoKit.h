@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MySDK.h"
 //! Project version number for MySDKDemoKit.
 FOUNDATION_EXPORT double MySDKDemoKitVersionNumber;
 

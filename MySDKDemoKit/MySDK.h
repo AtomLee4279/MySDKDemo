@@ -7,16 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class MySDK;
 
 @protocol KolaDelegate <NSObject>
 
-@optional
+@required
 //1.初始化回调方法
--(void)KolaDidFinishInit:(NSDictionary*)initRuslt;
+-(void)KolaDidFinishInitWithResult:(NSDictionary*)initRuslt;
 
 //2.登录回调方法
 -(void)KolaDidFinishLogin:(NSDictionary*)LoginResult;
+
+-(void)KolaNetWorkRequestWithFail:(NSDictionary*)Fail;
 
 @end
 

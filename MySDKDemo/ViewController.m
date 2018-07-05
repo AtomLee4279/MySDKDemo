@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
+#import <MySDKDemoKit/MySDKDemoKit.h>
 
+#import "MySDKConfig.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [MySDK shareInstance].delegate = self;
+
 }
 
 
@@ -27,14 +30,26 @@
 
 - (IBAction)test:(id)sender {
     
-//    NSDictionary *dict = [NSDictionary dictionary];
-//    NSDictionary *dict = @{@"name":@"lnj", @"phone":@"12345678", @"address":@"天朝"};
+    // 初始化
+    [MySDKConfig shareInstance].appid =  @"100000";
+    [MySDKConfig shareInstance].appkey =  @"123456";
+    [MySDKConfig shareInstance].channel = @"appstore100000";
     [MySDK Kola_InitWithParam:[NSDictionary dictionary]];
     
 }
 
--(void)KolaDidFinishInit:(NSDictionary *)initRuslt
+-(void)KolaDidFinishInitWithResult:(NSDictionary *)initRuslt
 {
     NSLog(@"aaa");
+}
+
+-(void)KolaDidFinishLogin:(NSDictionary*)LoginResult{
+    NSLog(@"bbb");
+    
+}
+
+-(void)KolaNetWorkRequestWithFail:(NSDictionary*)Fail{
+    
+    NSLog(@"ccc");
 }
 @end

@@ -8,7 +8,8 @@
 
 #import "MySDK.h"
 #import "MySDKNetWorking.h"
-@class MySDK;
+#import "MySDKConfig.h"
+
 @implementation MySDK
 
 + (instancetype)shareInstance {
@@ -31,10 +32,17 @@
 -(void)delegateToCPWithType:(NSString *)type andParam:(NSDictionary *)param
 {
     if ([type isEqualToString:@"init"]) {
-        if ([self.delegate respondsToSelector:@selector(KolaDidFinishInit:)]) {
-            [self.delegate KolaDidFinishInit:param];
+        if ([self.delegate respondsToSelector:@selector(KolaDidFinishInitWithResult:)]) {
+            [self.delegate KolaDidFinishInitWithResult:param];
         }
     }
+    else if ([type isEqualToString:@"NetWorkFail"]){
+        if ([self.delegate respondsToSelector:@selector(KolaNetWorkRequestWithFail:)]) {
+            [self.delegate KolaNetWorkRequestWithFail:param];
+        }
+    }
+    
+    
     
 }
 
