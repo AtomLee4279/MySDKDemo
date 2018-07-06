@@ -8,24 +8,28 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MySDKConfig.h"
+#import "MySDKNetWorkController.h"
+
 @class MySDK;
 
 @protocol KolaDelegate <NSObject>
 
 @required
-//1.初始化回调方法
+//初始化成功回调方法
 -(void)KolaDidFinishInit:(NSDictionary*)initRuslt;
 
-//2.登录回调方法
+//登录成功回调方法
 -(void)KolaDidFinishLogin:(NSDictionary*)LoginResult;
 
--(void)KolaNetWorkRequestWithFail:(NSDictionary*)Fail;
+//sdk功能（初始化、登录..）调用失败的回调方法（两种情况：1.网络请求成功，调用失败；2.网络原因，网络请求失败）
+-(void)KolaFunctionOrNetWorkFail:(NSDictionary*)Fail;
 
 @end
 
 @interface MySDK :NSObject
 
-@property(strong,nonatomic) id<KolaDelegate> delegate;
+@property(weak,nonatomic) id<KolaDelegate> delegate;
 
 //-(void)delegateToCPWithType:(NSString*)type andParam:(NSDictionary*)param;
 

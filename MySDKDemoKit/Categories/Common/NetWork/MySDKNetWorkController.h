@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MySDKNetWorking : NSObject
+@interface MySDKNetWorkController : NSObject
 
 +(void)myRequestWithType:(NSString*)type param:(nullable id)param;
 

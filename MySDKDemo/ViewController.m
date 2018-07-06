@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <MySDKDemoKit/MySDKDemoKit.h>
 
-#import "MySDKConfig.h"
 @interface ViewController ()
 
 @end
@@ -38,8 +36,8 @@
     
 }
 
--(void)KolaDidFinishInit:(NSDictionary *)initRuslt
-{
+-(void)KolaDidFinishInit:(NSDictionary *)initRuslt{
+    
     NSLog(@"aaa");
 }
 
@@ -48,7 +46,7 @@
     
 }
 
--(void)KolaNetWorkRequestWithFail:(NSDictionary*)Fail{
+-(void)KolaFunctionOrNetWorkFail:(NSDictionary*)Fail{
     
     NSLog(@"ccc");
 }
