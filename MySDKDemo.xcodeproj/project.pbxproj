@@ -35,7 +35,8 @@
 		67CF948E20EE3CB800F10570 /* NSString+Sign.h in Headers */ = {isa = PBXBuildFile; fileRef = 67CF948C20EE3CB800F10570 /* NSString+Sign.h */; };
 		67CF948F20EE3CB800F10570 /* NSString+Sign.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CF948D20EE3CB800F10570 /* NSString+Sign.m */; };
 		67EE8B8F20EF28FB0007EAA9 /* MySDKNetWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EE8B8E20EF28FB0007EAA9 /* MySDKNetWorkController.m */; };
-		67EE8B9320EF3F6E0007EAA9 /* KKDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EE8B9220EF3F6E0007EAA9 /* KKDebug.h */; };
+		67EE8B9F20EF51CB0007EAA9 /* MySDKInitController.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EE8B9D20EF51CB0007EAA9 /* MySDKInitController.h */; };
+		67EE8BA020EF51CB0007EAA9 /* MySDKInitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67EE8B9E20EF51CB0007EAA9 /* MySDKInitController.m */; };
 		D01FE31A376A83339810C40E /* libPods-MySDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -99,7 +100,9 @@
 		67CF948C20EE3CB800F10570 /* NSString+Sign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sign.h"; sourceTree = "<group>"; };
 		67CF948D20EE3CB800F10570 /* NSString+Sign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sign.m"; sourceTree = "<group>"; };
 		67EE8B8E20EF28FB0007EAA9 /* MySDKNetWorkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySDKNetWorkController.m; sourceTree = "<group>"; };
-		67EE8B9220EF3F6E0007EAA9 /* KKDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDebug.h; sourceTree = "<group>"; };
+		67EE8B9D20EF51CB0007EAA9 /* MySDKInitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKInitController.h; sourceTree = "<group>"; };
+		67EE8B9E20EF51CB0007EAA9 /* MySDKInitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKInitController.m; sourceTree = "<group>"; };
+		67EE8BA220EF57EE0007EAA9 /* GlobalDefine.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.pch; sourceTree = "<group>"; };
 		9DA844A96FFABFF74EE5A191 /* libPods-MySDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22468AD4E648C2FB747C47 /* Pods-MySDKDemoKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoKit/Pods-MySDKDemoKit.debug.xcconfig"; sourceTree = "<group>"; };
 		ECD160EB9BF04CF311AE38DC /* libPods-MySDKDemoKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MySDKDemoKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,10 +170,10 @@
 		675D028C20E1DA83004E0687 /* MySDKDemoKit */ = {
 			isa = PBXGroup;
 			children = (
-				675D029E20E1F22A004E0687 /* Categories */,
 				675D028D20E1DA83004E0687 /* MySDKDemoKit.h */,
 				675D029A20E1ED5D004E0687 /* MySDK.h */,
 				675D029B20E1ED5D004E0687 /* MySDK.m */,
+				675D029E20E1F22A004E0687 /* Categories */,
 				675D028E20E1DA84004E0687 /* Info.plist */,
 				675D02C220E242BC004E0687 /* MySDKDemo.bundle */,
 			);
@@ -190,6 +193,7 @@
 		675D029F20E1F246004E0687 /* Init */ = {
 			isa = PBXGroup;
 			children = (
+				67EE8B9C20EF51A50007EAA9 /* Controller */,
 				67C765BE20EDD41C00B89357 /* Model */,
 			);
 			path = Init;
@@ -232,7 +236,7 @@
 		675D02AB20E23738004E0687 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				67EE8B9520EF43660007EAA9 /* Log */,
+				67EE8B9520EF43660007EAA9 /* GlobalDefine */,
 				67EE8B9120EF3E650007EAA9 /* NSString */,
 				67EE8B9020EF3E560007EAA9 /* NetWork */,
 				675D02B120E237C7004E0687 /* Logo */,
@@ -286,8 +290,8 @@
 		67EE8B9020EF3E560007EAA9 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				67AC71B420ECA093001A8E2C /* MySDKNetWorkController.h */,
-				67EE8B8E20EF28FB0007EAA9 /* MySDKNetWorkController.m */,
+				67EE8BA420EF63130007EAA9 /* Model */,
+				67EE8BA320EF63060007EAA9 /* Controller */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -303,12 +307,37 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
-		67EE8B9520EF43660007EAA9 /* Log */ = {
+		67EE8B9520EF43660007EAA9 /* GlobalDefine */ = {
 			isa = PBXGroup;
 			children = (
-				67EE8B9220EF3F6E0007EAA9 /* KKDebug.h */,
+				67EE8BA220EF57EE0007EAA9 /* GlobalDefine.pch */,
 			);
-			path = Log;
+			path = GlobalDefine;
+			sourceTree = "<group>";
+		};
+		67EE8B9C20EF51A50007EAA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67EE8B9D20EF51CB0007EAA9 /* MySDKInitController.h */,
+				67EE8B9E20EF51CB0007EAA9 /* MySDKInitController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67EE8BA320EF63060007EAA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67AC71B420ECA093001A8E2C /* MySDKNetWorkController.h */,
+				67EE8B8E20EF28FB0007EAA9 /* MySDKNetWorkController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67EE8BA420EF63130007EAA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7BD2BB60E6B0C4D5661BE067 /* Frameworks */ = {
@@ -338,13 +367,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67EE8B9320EF3F6E0007EAA9 /* KKDebug.h in Headers */,
 				67AC71B620ECA093001A8E2C /* MySDKNetWorkController.h in Headers */,
 				67CF948E20EE3CB800F10570 /* NSString+Sign.h in Headers */,
 				67C765C120EDD43500B89357 /* MySDKConfig.h in Headers */,
 				675D02BC20E23B3D004E0687 /* LogoView.h in Headers */,
 				675D02A920E1F957004E0687 /* LoginView.h in Headers */,
 				67C765C620EDFCCD00B89357 /* NSString+UniqueStrings.h in Headers */,
+				67EE8B9F20EF51CB0007EAA9 /* MySDKInitController.h in Headers */,
 				675D028F20E1DA84004E0687 /* MySDKDemoKit.h in Headers */,
 				675D029C20E1ED5D004E0687 /* MySDK.h in Headers */,
 			);
@@ -506,6 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67EE8BA020EF51CB0007EAA9 /* MySDKInitController.m in Sources */,
 				675D02BD20E23B3D004E0687 /* LogoView.m in Sources */,
 				67CF948F20EE3CB800F10570 /* NSString+Sign.m in Sources */,
 				675D02AA20E1F957004E0687 /* LoginView.m in Sources */,
@@ -711,6 +741,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MySDKDemoKit/Categories/Common/GlobalDefine/GlobalDefine.pch";
 				INFOPLIST_FILE = MySDKDemoKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -740,6 +771,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MySDKDemoKit/Categories/Common/GlobalDefine/GlobalDefine.pch";
 				INFOPLIST_FILE = MySDKDemoKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
