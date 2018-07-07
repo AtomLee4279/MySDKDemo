@@ -13,5 +13,5 @@
 
 + (instancetype)shareInstance;
 
-+(void)mySDKInit;
+-(void)mySDKInit;
 @end

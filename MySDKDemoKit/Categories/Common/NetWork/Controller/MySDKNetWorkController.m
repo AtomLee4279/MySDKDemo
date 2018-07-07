@@ -32,7 +32,7 @@ static NSString * const Init_URL = @"App/Basic/Init";
     static MySDKNetWorkController *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        //        instance = [super new];
+        
         instance = [[self alloc]init];
     });
     return instance;
@@ -44,17 +44,19 @@ static NSString * const Init_URL = @"App/Basic/Init";
     [[MySDKNetWorkController new].manager POST:Init_URL parameters:param progress:NULL success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         NetLog(@"init#网络请求,\n返回数据：%@",responseObject);
-        //网络请求成功：告诉cp功能调用成功或者失败（失败原因有待详查）
-//        [[MySDK shareInstance] delegateToCPWithType:[responseObject[@"result"] boolValue]?@"init":@"Fail" andParam:responseObject];
+        //服务器返回的对象转成客户端定义的network模型
+        NetWorkRespondModel *result = [NetWorkRespondModel netWorkModelWithObject:responseObject];
         //把网络请求成功结果返回给功能模块
-        [[MySDKNetWorkController shareInstance] NetWorkRespondSuccessWithParam:responseObject];
+        [[MySDKNetWorkController shareInstance] NetWorkRespondSuccessWithParam:result];
+        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         NetLog(@"\n#init#网络请求失败！请检查网络：%@",[error mj_keyValues]);
-        //网络请求失败:告诉cp功能调用失败
-//        [[MySDK shareInstance] delegateToCPWithType:@"Fail" andParam:[error mj_keyValues]];
+        //服务器返回的对象转成客户端定义的network模型
+        NetWorkRespondModel *result = [NetWorkRespondModel netWorkModelWithObject:error];
         //把网络请求失败结果返回给功能模块
-        [[MySDKNetWorkController shareInstance] NetWorkRespondFailWithParam:[error mj_keyValues]];
+        [[MySDKNetWorkController shareInstance] NetWorkRespondFailWithParam:result];
+        
     }];
     
 }
@@ -65,13 +67,13 @@ static NSString * const Init_URL = @"App/Basic/Init";
 
 
 
--(void)NetWorkRespondSuccessWithParam:(NSDictionary*)param{
+-(void)NetWorkRespondSuccessWithParam:(nullable id)param{
     if ([self.delegate respondsToSelector:@selector(NetWorkRespondSuccessDelegate:)]) {
         [self.delegate NetWorkRespondSuccessDelegate:param];
     }
 }
 
--(void)NetWorkRespondFailWithParam:(NSDictionary*)param{
+-(void)NetWorkRespondFailWithParam:(nullable id)param{
     if ([self.delegate respondsToSelector:@selector(NetWorkRespondFailDelegate:)]) {
         [self.delegate NetWorkRespondFailDelegate:param];
     }

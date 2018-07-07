@@ -46,7 +46,7 @@
     
 }
 
--(void)KolaFunctionOrNetWorkFail:(NSDictionary*)Fail{
+-(void)KolaHandleFail:(NSDictionary*)Fail{
     
     NSLog(@"ccc");
 }

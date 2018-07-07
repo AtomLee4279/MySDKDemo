@@ -23,7 +23,7 @@
 -(void)KolaDidFinishLogin:(NSDictionary*)LoginResult;
 
 //sdk功能（初始化、登录..）调用失败的回调方法（两种情况：1.网络请求成功，调用失败；2.网络原因，网络请求失败）
--(void)KolaFunctionOrNetWorkFail:(NSDictionary*)Fail;
+-(void)KolaHandleFail:(NSDictionary*)Reason;
 
 @end
 
@@ -36,7 +36,6 @@
 //单例
 + (instancetype)shareInstance;
 
--(void)delegateToCPWithType:(NSString *)type andParam:(NSDictionary *)param;
 /**
  初始化
  */

@@ -55,6 +55,12 @@
     });
     return instance;
 }
+
+-(void)test{
+    NSLog(@"");
+    
+}
+
 #pragma mark -- Getter&Setter
 
 - (NSString *)udid {

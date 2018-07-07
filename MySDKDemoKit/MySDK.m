@@ -26,27 +26,12 @@
 
 + (void)Kola_Init
 {
+    //检查初始化参数
     
-    
-    [MySDKInitController mySDKInit];
+    [[MySDKInitController shareInstance] mySDKInit];
     
 }
 
-//-(void)delegateToCPWithType:(NSString *)type andParam:(NSDictionary *)param
-//{
-//    if ([type isEqualToString:@"init"]) {
-//        if ([self.delegate respondsToSelector:@selector(KolaDidFinishInit:)]) {
-//            [self.delegate KolaDidFinishInit:param];
-//        }
-//    }
-//    else if ([type isEqualToString:@"Fail"]){
-//        if ([self.delegate respondsToSelector:@selector(KolaFunctionOrNetWorkFail:)]) {
-//            [self.delegate KolaFunctionOrNetWorkFail:param];
-//        }
-//    }
-//    
-//    
-//    
-//}
+
 
 @end

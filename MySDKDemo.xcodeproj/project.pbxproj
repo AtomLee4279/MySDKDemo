@@ -27,6 +27,8 @@
 		675D02BD20E23B3D004E0687 /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D02BB20E23B3D004E0687 /* LogoView.m */; };
 		675D02C320E242BC004E0687 /* MySDKDemo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 675D02C220E242BC004E0687 /* MySDKDemo.bundle */; };
 		678BC77920EB852600AAF280 /* testBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 678BC77820EB852600AAF280 /* testBundle.bundle */; };
+		6798C9DE20F093D400942D28 /* NetWorkRespondModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6798C9DC20F093D400942D28 /* NetWorkRespondModel.h */; };
+		6798C9DF20F093D400942D28 /* NetWorkRespondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6798C9DD20F093D400942D28 /* NetWorkRespondModel.m */; };
 		67AC71B620ECA093001A8E2C /* MySDKNetWorkController.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AC71B420ECA093001A8E2C /* MySDKNetWorkController.h */; };
 		67C765C120EDD43500B89357 /* MySDKConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C765BF20EDD43500B89357 /* MySDKConfig.h */; };
 		67C765C220EDD43500B89357 /* MySDKConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 67C765C020EDD43500B89357 /* MySDKConfig.m */; };
@@ -92,6 +94,8 @@
 		675D02C220E242BC004E0687 /* MySDKDemo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MySDKDemo.bundle; sourceTree = "<group>"; };
 		678BC77420EB84F700AAF280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		678BC77820EB852600AAF280 /* testBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = testBundle.bundle; sourceTree = "<group>"; };
+		6798C9DC20F093D400942D28 /* NetWorkRespondModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkRespondModel.h; sourceTree = "<group>"; };
+		6798C9DD20F093D400942D28 /* NetWorkRespondModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkRespondModel.m; sourceTree = "<group>"; };
 		67AC71B420ECA093001A8E2C /* MySDKNetWorkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKNetWorkController.h; sourceTree = "<group>"; };
 		67C765BF20EDD43500B89357 /* MySDKConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKConfig.h; sourceTree = "<group>"; };
 		67C765C020EDD43500B89357 /* MySDKConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKConfig.m; sourceTree = "<group>"; };
@@ -278,6 +282,15 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		6798C9DB20F0939500942D28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6798C9DC20F093D400942D28 /* NetWorkRespondModel.h */,
+				6798C9DD20F093D400942D28 /* NetWorkRespondModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		67C765BE20EDD41C00B89357 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,7 +303,7 @@
 		67EE8B9020EF3E560007EAA9 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				67EE8BA420EF63130007EAA9 /* Model */,
+				6798C9DB20F0939500942D28 /* Model */,
 				67EE8BA320EF63060007EAA9 /* Controller */,
 			);
 			path = NetWork;
@@ -333,13 +346,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		67EE8BA420EF63130007EAA9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		7BD2BB60E6B0C4D5661BE067 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +380,7 @@
 				675D02A920E1F957004E0687 /* LoginView.h in Headers */,
 				67C765C620EDFCCD00B89357 /* NSString+UniqueStrings.h in Headers */,
 				67EE8B9F20EF51CB0007EAA9 /* MySDKInitController.h in Headers */,
+				6798C9DE20F093D400942D28 /* NetWorkRespondModel.h in Headers */,
 				675D028F20E1DA84004E0687 /* MySDKDemoKit.h in Headers */,
 				675D029C20E1ED5D004E0687 /* MySDK.h in Headers */,
 			);
@@ -541,6 +548,7 @@
 				675D02AA20E1F957004E0687 /* LoginView.m in Sources */,
 				67C765C520EDFCCD00B89357 /* NSString+UniqueStrings.m in Sources */,
 				67C765C220EDD43500B89357 /* MySDKConfig.m in Sources */,
+				6798C9DF20F093D400942D28 /* NetWorkRespondModel.m in Sources */,
 				675D029D20E1ED5D004E0687 /* MySDK.m in Sources */,
 				67EE8B8F20EF28FB0007EAA9 /* MySDKNetWorkController.m in Sources */,
 			);

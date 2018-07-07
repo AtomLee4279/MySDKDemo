@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NetWorkRespondModel.h"
 #import <AFNetworking.h>
 
 @class MySDKNetWorkController;
@@ -14,9 +15,9 @@
 
 @required
 
--(void)NetWorkRespondSuccessDelegate:(NSDictionary*)result;
+-(void)NetWorkRespondSuccessDelegate:(nullable NetWorkRespondModel*)result;
 
--(void)NetWorkRespondFailDelegate:(NSDictionary *)result;
+-(void)NetWorkRespondFailDelegate:(nullable NetWorkRespondModel*)result;
 
 @end
 
@@ -30,5 +31,8 @@
 
 +(void)requestInitWithParam:(nullable id)param;
 
+-(void)NetWorkRespondSuccessWithParam:(nullable id)param;
+
+-(void)NetWorkRespondFailWithParam:(nullable id)param;
 
 @end
