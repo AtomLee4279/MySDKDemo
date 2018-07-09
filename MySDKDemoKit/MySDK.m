@@ -10,6 +10,8 @@
 #import "NSString+Sign.h"
 #import <MJExtension.h>
 #import "MySDKInitController.h"
+#import "NSString+UniqueStrings.h"
+#import "MyToast.h"
 
 @implementation MySDK
 
@@ -26,11 +28,21 @@
 
 + (void)Kola_Init
 {
-    //检查初始化参数
-    
-    [[MySDKInitController shareInstance] mySDKInit];
-    
+    //检查初始化参数　
+    if ([[MySDK shareInstance]checkInitParam]) {
+         [[MySDKInitController shareInstance] mySDKInit];
+    }
 }
+
+-(BOOL)checkInitParam{
+    if (!([MySDKConfig shareInstance].appid&&[MySDKConfig shareInstance].appkey&&[MySDKConfig shareInstance].channel)) {
+        [MyToast showAlertMessageWithMessage:@"appid/appkey/channel不能为空！请检查sdk初始化填入参数" duration:1.0f];
+        return NO;
+    }
+    return YES;
+}
+
+
 
 
 

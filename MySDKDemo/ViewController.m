@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "MyToast.h"
+#import <KSToastView.h>
 
 @interface ViewController ()
 
@@ -17,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [MySDK shareInstance].delegate = self;
-
+    
 }
 
 
@@ -33,7 +35,6 @@
     [MySDKConfig shareInstance].appkey =  @"123456";
     [MySDKConfig shareInstance].channel = @"appstore100000";
     [MySDK Kola_Init];
-    
 }
 
 -(void)KolaDidFinishInit:(NSDictionary *)initRuslt{
@@ -46,7 +47,7 @@
     
 }
 
--(void)KolaHandleFail:(NSDictionary*)Fail{
+-(void)KolaHandleFail:(NSString*)failType andDtail:(NSDictionary*)detail{
     
     NSLog(@"ccc");
 }

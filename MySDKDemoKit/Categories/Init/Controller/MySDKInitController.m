@@ -45,12 +45,12 @@
         [[MySDK shareInstance].delegate KolaDidFinishInit:result.mj_keyValues];
      
     }
-    //初始化失败
+    //初始化失败:具体看情况
     if (![result.result boolValue]) {
-        result.failType = @"init-fail:请检查初始化上传参数";
-        if ([[MySDK shareInstance].delegate respondsToSelector:@selector(KolaHandleFail:)]){
+        
+        if ([[MySDK shareInstance].delegate respondsToSelector:@selector(KolaHandleFail:andDtail:)]){
             
-            [[MySDK shareInstance].delegate KolaHandleFail:result.mj_keyValues];
+            [[MySDK shareInstance].delegate KolaHandleFail:@"init-fail" andDtail:result.mj_keyValues];
             
         }
     }
@@ -62,10 +62,9 @@
     
     NSLog(@"--MySDKInitController--NetWorkRespondFailDelegate");
     //网络问题导致初始化失败
-    result.failType = @"init-fail：网络请求失败，请检查网络";
-    if ([[MySDK shareInstance].delegate respondsToSelector:@selector(KolaHandleFail:)]){
+    if ([[MySDK shareInstance].delegate respondsToSelector:@selector(KolaHandleFail:andDtail:)]){
         
-        [[MySDK shareInstance].delegate KolaHandleFail:result.mj_keyValues];
+        [[MySDK shareInstance].delegate KolaHandleFail:@"init-fail：NetWork-Fail" andDtail:result.mj_keyValues];
         
     }
     

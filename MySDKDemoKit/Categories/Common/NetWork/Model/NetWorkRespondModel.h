@@ -22,10 +22,6 @@
 //服务器返回字段，表示网络请求失败后，返回的报错信息
 @property(strong,nonatomic) NSError *error;
 
-//网络请求后，sdk内部对功能调用失败进行判断分类处理的字段。例如初始化失败的情况分类：1.init-fail:请检查初始化参数 2.init-fail:网络请求失败，请检查网络
-@property(strong,nonatomic) NSString *failType;
-
-
 
 -(instancetype)initWithObject:(id)object;
 

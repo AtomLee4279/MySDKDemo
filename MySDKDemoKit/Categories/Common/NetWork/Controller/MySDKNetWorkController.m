@@ -38,6 +38,8 @@ static NSString * const Init_URL = @"App/Basic/Init";
     return instance;
 }
 
+//初始化
+//param:参数
 +(void)requestInitWithParam:(nullable id)param{
     
     DBLog(@"init，上传的参数：%@", param);
@@ -66,13 +68,14 @@ static NSString * const Init_URL = @"App/Basic/Init";
 
 
 
-
+//把网络请求成功的结果返回给实现了代理方法的功能模块
 -(void)NetWorkRespondSuccessWithParam:(nullable id)param{
     if ([self.delegate respondsToSelector:@selector(NetWorkRespondSuccessDelegate:)]) {
         [self.delegate NetWorkRespondSuccessDelegate:param];
     }
 }
 
+////把网络请求失败的结果返回给实现了代理方法的功能模块
 -(void)NetWorkRespondFailWithParam:(nullable id)param{
     if ([self.delegate respondsToSelector:@selector(NetWorkRespondFailDelegate:)]) {
         [self.delegate NetWorkRespondFailDelegate:param];

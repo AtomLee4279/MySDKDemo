@@ -23,7 +23,7 @@
 -(void)KolaDidFinishLogin:(NSDictionary*)LoginResult;
 
 //sdk功能（初始化、登录..）调用失败的回调方法（两种情况：1.网络请求成功，调用失败；2.网络原因，网络请求失败）
--(void)KolaHandleFail:(NSDictionary*)Reason;
+-(void)KolaHandleFail:(NSString*)failType andDtail:(NSDictionary*)detail;
 
 @end
 
@@ -41,4 +41,6 @@
  */
 + (void)Kola_Init;
 
+
+-(BOOL)checkInitParam;
 @end
