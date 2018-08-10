@@ -39,10 +39,10 @@
     
     NSLog(@"--MySDKInitController--NetWorkRespondSuccessDelegate");
     //初始化成功
-    if ([result.result boolValue]&&[[MySDK shareInstance].delegate respondsToSelector:@selector(KolaDidFinishInit:)]){
+    if ([result.result boolValue]&&[[MySDK shareInstance].delegate respondsToSelector:@selector(KolaDidInitFinish:)]){
     // 初始化返回的数据，不必要给cp看到。
         result.data = nil;
-        [[MySDK shareInstance].delegate KolaDidFinishInit:result.mj_keyValues];
+        [[MySDK shareInstance].delegate KolaDidInitFinish:result.mj_keyValues];
      
     }
     //初始化失败:具体看情况

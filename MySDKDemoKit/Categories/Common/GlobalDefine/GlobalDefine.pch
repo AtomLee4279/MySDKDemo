@@ -30,7 +30,9 @@
 extern _Bool DEBUG_FOR_CP;
 #define KKLog(fmt,...) if (DEBUG_FOR_CP) NSLog((@"# === Koala log === # " fmt), ##__VA_ARGS__)
 
+#import "MyToast.h"
 
+#define Toast(message,time) [MyToast showAlertMessageWithMessage:message duration:time]
 
 
 #endif /* GlobalDefine_pch */

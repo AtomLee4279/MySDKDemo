@@ -11,7 +11,6 @@
 #import <MJExtension.h>
 #import "MySDKInitController.h"
 #import "NSString+UniqueStrings.h"
-#import "MyToast.h"
 
 @implementation MySDK
 
@@ -36,7 +35,7 @@
 
 -(BOOL)checkInitParam{
     if (!([MySDKConfig shareInstance].appid&&[MySDKConfig shareInstance].appkey&&[MySDKConfig shareInstance].channel)) {
-        [MyToast showAlertMessageWithMessage:@"appid/appkey/channel不能为空！请检查sdk初始化填入参数" duration:1.0f];
+        Toast(@"appid/appkey/channel不能为空！请检查sdk初始化填入参数", 1.0f);
         return NO;
     }
     return YES;

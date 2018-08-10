@@ -11,7 +11,7 @@
 
 @interface ViewController : UIViewController<KolaDelegate>
 
-@property (weak, nonatomic) IBOutlet UIImageView *test;
+
 
 @end
 

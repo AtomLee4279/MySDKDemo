@@ -28,7 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)test:(id)sender {
+- (IBAction)testInit:(id)sender {
     
     // 初始化
     [MySDKConfig shareInstance].appid =  @"100000";
@@ -36,13 +36,15 @@
     [MySDKConfig shareInstance].channel = @"appstore100000";
     [MySDK Kola_Init];
 }
+- (IBAction)testLogin:(id)sender {
+}
 
--(void)KolaDidFinishInit:(NSDictionary *)initRuslt{
+-(void)KolaDidInitFinish:(NSDictionary *)initRuslt{
     
     NSLog(@"aaa");
 }
 
--(void)KolaDidFinishLogin:(NSDictionary*)LoginResult{
+-(void)KolaDidLoginFinish:(NSDictionary*)LoginResult{
     NSLog(@"bbb");
     
 }
