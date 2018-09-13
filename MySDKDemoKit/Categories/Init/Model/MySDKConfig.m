@@ -40,6 +40,8 @@
 //idfv:客户端能确保无论怎样都能获取得到。但是每次卸载重装之后都会不一样
 @property(copy, nonatomic) NSString *idfv;
 
+//后台需求：在初始化网络请求成功时返回的广告渠道号字段,传入此参数保存
+@property(copy,nonatomic)  NSString *advchannel;
 
 @end
 
@@ -88,7 +90,7 @@
         return _sdkver;
     }
     
-    _sdkver = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    _sdkver = [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"] stringByAppendingFormat:@".1"];
     
     return _sdkver;
 }
@@ -160,6 +162,12 @@
     
     _idfv = [NSString idfv];
     return _idfv;
+}
+
+- (NSString *)advchannel{
+    
+    _advchannel = [NSString advchannel:NULL];
+    return _advchannel;
 }
 
 

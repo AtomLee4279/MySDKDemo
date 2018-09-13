@@ -22,6 +22,9 @@
 
 + (NSString *)stringFromBase64String:(NSString *)base64String;
 
+//后台需求：在初始化网络请求成功时返回的广告渠道号字段,传入此参数保存
++ (NSString *)advchannel:(NSString* _Nullable)arg;
+
 /** 获取标示当前游戏包一个字符串
  生成规则：游戏的版本号（去小数点）+ 连接符号（“_”） + 游戏build版本号（去小数点）；
  */

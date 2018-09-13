@@ -42,6 +42,10 @@
 }
 
 
++ (void)Kola_Login{
+    
+}
+
 
 
 

@@ -11,6 +11,8 @@
 #import <MJExtension.h>
 #import "MySDKConfig.h"
 #import "MySDK.h"
+#import "NSString+UniqueStrings.h"
+#import "MySDKInitData.h"
 @implementation MySDKInitController
 
 + (instancetype)shareInstance {
@@ -40,6 +42,9 @@
     NSLog(@"--MySDKInitController--NetWorkRespondSuccessDelegate");
     //初始化成功
     if ([result.result boolValue]&&[[MySDK shareInstance].delegate respondsToSelector:@selector(KolaDidInitFinish:)]){
+        [[MySDKInitData new] setValuesForKeysWithDictionary:result.data];
+        //如需要，则更新手机存的advchannel值
+        [NSString advchannel:result.data[@"advchannel"]];
     // 初始化返回的数据，不必要给cp看到。
         result.data = nil;
         [[MySDK shareInstance].delegate KolaDidInitFinish:result.mj_keyValues];

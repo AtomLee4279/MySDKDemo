@@ -19,6 +19,9 @@ static NSString * const myBaseURLString = @"https://api.sdk.gzkaola.com";
 /** 初始化 */
 static NSString * const Init_URL = @"App/Basic/Init";
 
+/** 一键注册：注册登陆 */
+static NSString * const RegLogOn_URL = @"App/Accounts/RegLogOn";
+
 @interface MySDKNetWorkController()
 
 @end
@@ -63,7 +66,30 @@ static NSString * const Init_URL = @"App/Basic/Init";
     
 }
 
-
+//初始化
+//param:参数
++(void)requestRegisterAndLoginWithParam:(nullable id)param{
+    
+    DBLog(@"init，上传的参数：%@", param);
+    [[MySDKNetWorkController new].manager POST:RegLogOn_URL parameters:param progress:NULL success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        NetLog(@"RegLogin#网络请求,\n返回数据：%@",responseObject);
+        //服务器返回的对象转成客户端定义的network模型
+        NetWorkRespondModel *result = [NetWorkRespondModel netWorkModelWithObject:responseObject];
+        //把网络请求成功结果返回给功能模块
+        [[MySDKNetWorkController shareInstance] NetWorkRespondSuccessWithParam:result];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        NetLog(@"\n#RegLogin#网络请求失败！请检查网络：%@",[error mj_keyValues]);
+        //服务器返回的对象转成客户端定义的network模型
+        NetWorkRespondModel *result = [NetWorkRespondModel netWorkModelWithObject:error];
+        //把网络请求失败结果返回给功能模块
+        [[MySDKNetWorkController shareInstance] NetWorkRespondFailWithParam:result];
+        
+    }];
+    
+}
 
 
 

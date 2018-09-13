@@ -71,6 +71,22 @@
     return result;
 }
 
+//后台需求：在初始化网络请求成功时返回的广告渠道号字段,传入此参数保存
++ (NSString *)advchannel:(NSString* _Nullable)arg {
+    
+    // 从本地取值
+    NSString *advchannel = [[NSUserDefaults standardUserDefaults] objectForKey:@"advchannel"];
+    advchannel = advchannel ?: @"";
+    
+    // advchannel有值，且跟原来的值不同才会覆盖
+    if (arg.length&&![arg isEqualToString:advchannel]){
+        advchannel = arg;
+        [[NSUserDefaults standardUserDefaults] setObject:arg forKey:@"advchannel"];
+    }
+    
+    return advchannel;
+}
+
 static const char encodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
 + (NSString *)stringFromBase64String:(NSString *)base64String {

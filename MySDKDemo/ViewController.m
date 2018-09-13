@@ -37,7 +37,10 @@
     [MySDK Kola_Init];
 }
 - (IBAction)testLogin:(id)sender {
+    
+    
 }
+
 
 -(void)KolaDidInitFinish:(NSDictionary *)initRuslt{
     

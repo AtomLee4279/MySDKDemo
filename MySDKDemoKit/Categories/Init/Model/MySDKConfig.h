@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+//请求初始化时上传的数据的模型
 @interface MySDKConfig : NSObject
 
 //单例

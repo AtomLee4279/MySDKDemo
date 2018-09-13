@@ -43,4 +43,6 @@
 
 
 -(BOOL)checkInitParam;
+
++ (void)Kola_Login;
 @end
