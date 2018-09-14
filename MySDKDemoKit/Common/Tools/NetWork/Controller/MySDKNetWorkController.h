@@ -31,6 +31,8 @@
 
 +(void)requestInitWithParam:(nullable id)param;
 
++(void)requestRegisterAndLoginWithParam:(nullable id)param;
+
 -(void)NetWorkRespondSuccessWithParam:(nullable id)param;
 
 -(void)NetWorkRespondFailWithParam:(nullable id)param;

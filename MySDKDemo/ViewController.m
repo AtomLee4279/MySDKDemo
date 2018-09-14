@@ -38,6 +38,7 @@
 }
 - (IBAction)testLogin:(id)sender {
     
+    [MySDK Kola_Login];
     
 }
 

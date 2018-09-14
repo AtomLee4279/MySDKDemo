@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		164B011D10E6AA4D99051164 /* libPods-MySDKDemoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD160EB9BF04CF311AE38DC /* libPods-MySDKDemoKit.a */; };
+		671F483D214B5A4E0064192E /* ParamsRegLogOn.h in Headers */ = {isa = PBXBuildFile; fileRef = 671F483B214B5A4E0064192E /* ParamsRegLogOn.h */; };
+		671F483E214B5A4E0064192E /* ParamsRegLogOn.m in Sources */ = {isa = PBXBuildFile; fileRef = 671F483C214B5A4E0064192E /* ParamsRegLogOn.m */; };
+		671F4842214B6A6A0064192E /* APICommonParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 671F4840214B6A6A0064192E /* APICommonParams.h */; };
+		671F4843214B6A6A0064192E /* APICommonParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 671F4841214B6A6A0064192E /* APICommonParams.m */; };
+		671F4846214B6F1E0064192E /* MySDKLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 671F4844214B6F1E0064192E /* MySDKLoginController.h */; };
+		671F4847214B6F1E0064192E /* MySDKLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 671F4845214B6F1E0064192E /* MySDKLoginController.m */; };
 		675D027220E1D9F0004E0687 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D027120E1D9F0004E0687 /* AppDelegate.m */; };
 		675D027520E1D9F0004E0687 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 675D027420E1D9F0004E0687 /* ViewController.m */; };
 		675D027820E1D9F0004E0687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675D027620E1D9F0004E0687 /* Main.storyboard */; };
@@ -32,8 +38,6 @@
 		6798C9DE20F093D400942D28 /* NetWorkRespondModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6798C9DC20F093D400942D28 /* NetWorkRespondModel.h */; };
 		6798C9DF20F093D400942D28 /* NetWorkRespondModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6798C9DD20F093D400942D28 /* NetWorkRespondModel.m */; };
 		67AC71B620ECA093001A8E2C /* MySDKNetWorkController.h in Headers */ = {isa = PBXBuildFile; fileRef = 67AC71B420ECA093001A8E2C /* MySDKNetWorkController.h */; };
-		67B6C563214A1EA400ED4EE0 /* MySDKLoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 67B6C561214A1EA400ED4EE0 /* MySDKLoginController.h */; };
-		67B6C564214A1EA400ED4EE0 /* MySDKLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B6C562214A1EA400ED4EE0 /* MySDKLoginController.m */; };
 		67B6C567214A55FF00ED4EE0 /* MySDKInitData.h in Headers */ = {isa = PBXBuildFile; fileRef = 67B6C565214A55FF00ED4EE0 /* MySDKInitData.h */; };
 		67B6C568214A55FF00ED4EE0 /* MySDKInitData.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B6C566214A55FF00ED4EE0 /* MySDKInitData.m */; };
 		67C765C120EDD43500B89357 /* MySDKConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 67C765BF20EDD43500B89357 /* MySDKConfig.h */; };
@@ -76,6 +80,12 @@
 		0209C0D1716563EE50C31427 /* Pods-MySDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemo/Pods-MySDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		1CB74C22691A7C8CDB33C95D /* Pods-MySDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemo/Pods-MySDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4E2911D1EF250000D9183269 /* Pods-MySDKDemoKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySDKDemoKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySDKDemoKit/Pods-MySDKDemoKit.release.xcconfig"; sourceTree = "<group>"; };
+		671F483B214B5A4E0064192E /* ParamsRegLogOn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParamsRegLogOn.h; sourceTree = "<group>"; };
+		671F483C214B5A4E0064192E /* ParamsRegLogOn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParamsRegLogOn.m; sourceTree = "<group>"; };
+		671F4840214B6A6A0064192E /* APICommonParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APICommonParams.h; sourceTree = "<group>"; };
+		671F4841214B6A6A0064192E /* APICommonParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APICommonParams.m; sourceTree = "<group>"; };
+		671F4844214B6F1E0064192E /* MySDKLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySDKLoginController.h; sourceTree = "<group>"; };
+		671F4845214B6F1E0064192E /* MySDKLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySDKLoginController.m; sourceTree = "<group>"; };
 		675D026D20E1D9F0004E0687 /* MySDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		675D027020E1D9F0004E0687 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		675D027120E1D9F0004E0687 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,8 +113,6 @@
 		6798C9DC20F093D400942D28 /* NetWorkRespondModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkRespondModel.h; sourceTree = "<group>"; };
 		6798C9DD20F093D400942D28 /* NetWorkRespondModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkRespondModel.m; sourceTree = "<group>"; };
 		67AC71B420ECA093001A8E2C /* MySDKNetWorkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKNetWorkController.h; sourceTree = "<group>"; };
-		67B6C561214A1EA400ED4EE0 /* MySDKLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MySDKLoginController.h; path = MySDKDemoKit/Categories/Login/Controller/MySDKLoginController.h; sourceTree = SOURCE_ROOT; };
-		67B6C562214A1EA400ED4EE0 /* MySDKLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MySDKLoginController.m; path = MySDKDemoKit/Categories/Login/Controller/MySDKLoginController.m; sourceTree = SOURCE_ROOT; };
 		67B6C565214A55FF00ED4EE0 /* MySDKInitData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKInitData.h; sourceTree = "<group>"; };
 		67B6C566214A55FF00ED4EE0 /* MySDKInitData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySDKInitData.m; sourceTree = "<group>"; };
 		67C765BF20EDD43500B89357 /* MySDKConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKConfig.h; sourceTree = "<group>"; };
@@ -143,6 +151,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		671F483F214B696D0064192E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6768DF2F20F30AC400B39903 /* Toast */,
+				67EE8B9120EF3E650007EAA9 /* NSString */,
+				67EE8B9020EF3E560007EAA9 /* NetWork */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		675D026420E1D9F0004E0687 = {
 			isa = PBXGroup;
 			children = (
@@ -186,20 +204,12 @@
 				675D028D20E1DA83004E0687 /* MySDKDemoKit.h */,
 				675D029A20E1ED5D004E0687 /* MySDK.h */,
 				675D029B20E1ED5D004E0687 /* MySDK.m */,
-				675D029E20E1F22A004E0687 /* Categories */,
-				675D02C220E242BC004E0687 /* MySDKDemo.bundle */,
-			);
-			path = MySDKDemoKit;
-			sourceTree = "<group>";
-		};
-		675D029E20E1F22A004E0687 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
 				675D02AB20E23738004E0687 /* Common */,
 				675D029F20E1F246004E0687 /* Init */,
 				675D02A120E1F26F004E0687 /* Login */,
+				675D02C220E242BC004E0687 /* MySDKDemo.bundle */,
 			);
-			path = Categories;
+			path = MySDKDemoKit;
 			sourceTree = "<group>";
 		};
 		675D029F20E1F246004E0687 /* Init */ = {
@@ -224,8 +234,8 @@
 		675D02A220E1F292004E0687 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				67B6C561214A1EA400ED4EE0 /* MySDKLoginController.h */,
-				67B6C562214A1EA400ED4EE0 /* MySDKLoginController.m */,
+				671F4844214B6F1E0064192E /* MySDKLoginController.h */,
+				671F4845214B6F1E0064192E /* MySDKLoginController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -243,6 +253,8 @@
 		675D02A420E1F29B004E0687 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				671F483B214B5A4E0064192E /* ParamsRegLogOn.h */,
+				671F483C214B5A4E0064192E /* ParamsRegLogOn.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,10 +262,10 @@
 		675D02AB20E23738004E0687 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				6768DF2F20F30AC400B39903 /* Toast */,
-				67EE8B9520EF43660007EAA9 /* GlobalDefine */,
-				67EE8B9120EF3E650007EAA9 /* NSString */,
-				67EE8B9020EF3E560007EAA9 /* NetWork */,
+				67EE8BA220EF57EE0007EAA9 /* GlobalDefine.pch */,
+				671F4840214B6A6A0064192E /* APICommonParams.h */,
+				671F4841214B6A6A0064192E /* APICommonParams.m */,
+				671F483F214B696D0064192E /* Tools */,
 				675D02B120E237C7004E0687 /* Logo */,
 			);
 			path = Common;
@@ -334,14 +346,6 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
-		67EE8B9520EF43660007EAA9 /* GlobalDefine */ = {
-			isa = PBXGroup;
-			children = (
-				67EE8BA220EF57EE0007EAA9 /* GlobalDefine.pch */,
-			);
-			path = GlobalDefine;
-			sourceTree = "<group>";
-		};
 		67EE8B9C20EF51A50007EAA9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,15 +393,17 @@
 			files = (
 				67AC71B620ECA093001A8E2C /* MySDKNetWorkController.h in Headers */,
 				67CF948E20EE3CB800F10570 /* NSString+Sign.h in Headers */,
+				671F4842214B6A6A0064192E /* APICommonParams.h in Headers */,
 				67C765C120EDD43500B89357 /* MySDKConfig.h in Headers */,
 				675D02BC20E23B3D004E0687 /* LogoView.h in Headers */,
 				675D02A920E1F957004E0687 /* LoginView.h in Headers */,
-				67B6C563214A1EA400ED4EE0 /* MySDKLoginController.h in Headers */,
 				67C765C620EDFCCD00B89357 /* NSString+UniqueStrings.h in Headers */,
 				67EE8B9F20EF51CB0007EAA9 /* MySDKInitController.h in Headers */,
 				6798C9DE20F093D400942D28 /* NetWorkRespondModel.h in Headers */,
 				67B6C567214A55FF00ED4EE0 /* MySDKInitData.h in Headers */,
 				675D028F20E1DA84004E0687 /* MySDKDemoKit.h in Headers */,
+				671F4846214B6F1E0064192E /* MySDKLoginController.h in Headers */,
+				671F483D214B5A4E0064192E /* ParamsRegLogOn.h in Headers */,
 				675D029C20E1ED5D004E0687 /* MySDK.h in Headers */,
 				6768DF3220F30B0900B39903 /* MyToast.h in Headers */,
 			);
@@ -562,12 +568,14 @@
 				67EE8BA020EF51CB0007EAA9 /* MySDKInitController.m in Sources */,
 				675D02BD20E23B3D004E0687 /* LogoView.m in Sources */,
 				67CF948F20EE3CB800F10570 /* NSString+Sign.m in Sources */,
+				671F483E214B5A4E0064192E /* ParamsRegLogOn.m in Sources */,
 				675D02AA20E1F957004E0687 /* LoginView.m in Sources */,
 				67B6C568214A55FF00ED4EE0 /* MySDKInitData.m in Sources */,
 				67C765C520EDFCCD00B89357 /* NSString+UniqueStrings.m in Sources */,
+				671F4843214B6A6A0064192E /* APICommonParams.m in Sources */,
 				67C765C220EDD43500B89357 /* MySDKConfig.m in Sources */,
-				67B6C564214A1EA400ED4EE0 /* MySDKLoginController.m in Sources */,
 				6798C9DF20F093D400942D28 /* NetWorkRespondModel.m in Sources */,
+				671F4847214B6F1E0064192E /* MySDKLoginController.m in Sources */,
 				675D029D20E1ED5D004E0687 /* MySDK.m in Sources */,
 				67EE8B8F20EF28FB0007EAA9 /* MySDKNetWorkController.m in Sources */,
 				6768DF3320F30B0900B39903 /* MyToast.m in Sources */,
@@ -769,7 +777,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/MySDKDemoKit/Categories/Common/GlobalDefine/GlobalDefine.pch";
+				GCC_PREFIX_HEADER = /Users/liyixian/Downloads/XcodeTest/MySDKDemo/MySDKDemoKit/Common/GlobalDefine.pch;
 				INFOPLIST_FILE = MySDKDemo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -799,7 +807,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/MySDKDemoKit/Categories/Common/GlobalDefine/GlobalDefine.pch";
+				GCC_PREFIX_HEADER = /Users/liyixian/Downloads/XcodeTest/MySDKDemo/MySDKDemoKit/Common/GlobalDefine.pch;
 				INFOPLIST_FILE = MySDKDemo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

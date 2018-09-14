@@ -11,6 +11,8 @@
 #import <MJExtension.h>
 #import "MySDKInitController.h"
 #import "NSString+UniqueStrings.h"
+#import "MySDKLoginController.h"
+
 
 @implementation MySDK
 
@@ -43,6 +45,8 @@
 
 
 + (void)Kola_Login{
+    
+    [[MySDKLoginController shareInstance] mySDKLogin];
     
 }
 

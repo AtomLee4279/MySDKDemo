@@ -7,7 +7,10 @@
 //
 
 #import "MySDKLoginController.h"
-
+#import <MJExtension.h>
+#import "NSString+Sign.h"
+#import "ParamsRegLogOn.h"
+#import "MySDKConfig.h"
 @implementation MySDKLoginController
 
 + (instancetype)shareInstance {
@@ -25,16 +28,20 @@
 -(void)mySDKLogin
 {
     //模型转字典
-//    NSDictionary *dict = [[MySDKConfig shareInstance] mj_keyValues];
+    ParamsRegLogOn *LoginParams = [ParamsRegLogOn new];
+    LoginParams.rltype = @"user";
+    LoginParams.uname = @"40045798";
+    LoginParams.password = @"ijm_7M4R5P";
+    NSDictionary *dict = [LoginParams mj_keyValues];
 //    //字符串签名，返回字典格式
-//    NSDictionary* uploadData = [NSString signDictionaryWithParameters:dict appKey:[MySDKConfig shareInstance].appkey];
-//    [MySDKNetWorkController requestInitWithParam:uploadData];
+    NSDictionary* uploadData = [NSString signDictionaryWithParameters:dict appKey:[MySDKConfig shareInstance].appkey];
+    [MySDKNetWorkController requestRegisterAndLoginWithParam:uploadData];
 }
 
 -(void)NetWorkRespondSuccessDelegate:(nullable NetWorkRespondModel*)result {
     
     NSLog(@"--MySDKInitController--NetWorkRespondSuccessDelegate");
-
+    
     
     
 }
